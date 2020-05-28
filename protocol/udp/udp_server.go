@@ -4,6 +4,7 @@ import (
 	"fmt"
 	"github.com/astaxie/beego/logs"
 	"net"
+	Net "open-golib/net"
 	"time"
 )
 
@@ -24,8 +25,8 @@ type UDPServerBase struct {
 
 //UDPServerStats ...
 type UDPServerStats struct {
-	Rx NetEventStat
-	Tx NetEventStat
+	Rx Net.NetEventStat
+	Tx Net.NetEventStat
 }
 
 //UDPServer ...
