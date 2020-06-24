@@ -6,7 +6,7 @@ import (
 	"strings"
 )
 
-func IntToIP(ipnr int) string {
+func IntToIP(ipnr uint) string {
 	var bytes [4]byte
 	bytes[0] = byte(ipnr & 0xFF)
 	bytes[1] = byte((ipnr >> 8) & 0xFF)
